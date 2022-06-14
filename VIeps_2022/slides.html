@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SLIDES: Global governance of emerging technologies - who is filling the voids?</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+      class: center, middle
+
+      # Global governance of emerging technologies - who is filling the voids?
+
+      ### Draft prepared for BCNWGG 2022
+
+      ### Lewin Schmitt (lewin.schmitt@upf.edu)
+
+      16 May 2022
+      
+      ---
+
+      # Agenda
+
+      1. Introduction
+      2. Conceptual Framework
+      3. Case studies: AI and crypto
+      4. Timeline of AI governance
+      5. Discussion
+
+      ---
+
+      # Introduction
+
+      - Emerging technologies --> Governance gaps
+      - How do IOs respond? Who fills the voids?
+
+      ---
+      
+      # Conceptual Framework
+      
+      .pull-left[
+      
+      Following *Morin et al.* (2019)
+      
+      ]
+      
+      --
+      
+      .pull-right[
+      
+      ![](img/BCNWGG%20-%20Sticky%20institutions%20-%20Plain.png)
+      
+      ]
+      
+      ---
+      
+      # Case studies: AI and crypto
+      
+      - typical, influential cases
+      - diverse conditions with similar outcomes
+      - both with a comparable time frame (global policy discussions picking up in the 2010s)
+      - AI: general-purpose
+      - crypto: application of blockchain tech
+      
+      ---
+      
+      # AI deep dive I
+      
+      .left-column[
+      
+      ![](https://media3.giphy.com/media/iMBEgyXkFBtdCFS93i/giphy.gif)
+      
+      ]
+      
+      --
+      
+      .right-column[
+      
+      Timeline of key events
+      
+      - 2018: Global policy debate kicking off
+        - G7 first substantive ministerial statement
+        - EU coming out with AI strategy
+        - OECD formed expert group on AI
+      - 2019: First outcomes, others joining in
+        - OECD's AI Principles
+        - endorsed by G20
+        - EU High-Level Expert Group & trailblazing Ethics Guidelines for Trustworthy AI
+        - Council of Europe establishes CAHAI
+      - 2020 - today:
+        - UNESCO Recommendation on AI
+        - Interorganizational cooperation: Globalpolicy.ai
+      
+      ]
+      
+      ---
+      
+      # AI deep dive II
+      
+      .left-column[
+      
+      ![](img/BCNWGG%20-%20Sticky%20institutions%20-%20AI.png)
+ 
+      
+      ]
+      
+      --
+      
+      .right-column[
+      
+      Case study shows
+
+      - **Informal IOs** (G7 and G20) = decorative second-movers
+      - **Like-minded formal IOs** (OECD and EU) = decisive first-movers
+      - **Diverse formal IOs** (UNESCO and CoE) = decisive second-movers
+      
+      Ergo: Formal IOs decisive, like-minded IOs faster. 
+      
+      ]
+      
+      ---
+      
+      class: center, middle, inverse
+      
+      #Thank you!      
+      
+    </textarea>
+    <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>var slideshow = remark.create({
+"highlightLanguage": "python",
+"highlightStyle": "monokai",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+  </body>
+</html>
