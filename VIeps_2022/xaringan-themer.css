@@ -314,3 +314,13 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .hljs-github-dark .hljs {
     background: #68909c;
   }
+
+
+/* Custom CSS */
+
+.huge .remark-code { /*Change made here*/
+  font-size: 200% !important;
+}
+.tiny .remark-code { /*Change made here*/
+  font-size: 50% !important;
+}
