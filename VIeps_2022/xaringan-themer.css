@@ -34,7 +34,7 @@
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'Source Code Pro';
   --code-font-is-google: 1;
-  --base-font-size: 28px;
+  --base-font-size: 32px;
   --text-font-size: 1rem;
   --code-font-size: 24px;
   --code-inline-font-size: 1em;
@@ -318,9 +318,39 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 /* Custom CSS */
 
-.huge .remark-code { /*Change made here*/
+/* more text sizes */
+
+.huge { /*Change made here*/
   font-size: 200% !important;
 }
-.tiny .remark-code { /*Change made here*/
+.large { /*Change made here*/
+  font-size: 150% !important;
+}
+.small { /*Change made here*/
+  font-size: 75% !important;
+}
+.tiny { /*Change made here*/
   font-size: 50% !important;
+}
+
+/* adjust image size */
+
+.img-small img {
+  width: 75% !important;
+}
+
+.img-tiny img {
+  width: 50% !important;
+}
+
+/* Two-column layout */
+.left-column {
+  width: 47.5%;
+  height: 92%;
+  float: left;
+}
+.right-column {
+  width: 47.5%;
+  float: right;
+  padding-top: 1em;
 }

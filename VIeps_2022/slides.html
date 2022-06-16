@@ -66,8 +66,6 @@
 
       ]
 
-      --
-
       .pull-right[
 
       ![](img/pilot.jpg)
@@ -80,15 +78,19 @@
 
       .pull-left[
 
-      Document level: Mostly manual.
+      **Document level**: Mostly manual.
 
-      Sentence level: Mostly computational.
+      .small[Currently n=96, foreseen ~400]
+
+      **Sentence level**: Mostly computational.
+
+      .small[n = hundreds of thousands]
 
       ]
 
       --
 
-      .pull-right[
+      .pull-right.img-small[
 
       ![](img/AIdocs_Workflow_v2.png)
 
@@ -96,37 +98,50 @@
 
       ---
 
-      # Coding at document level (metadata)
-
-      - Date, region, ...
-      - Type of actor: public, private, civil society
-      - Target audience:
-      - Scope: broad vs narrow
-
-      ---
-
-      # Coding at sentence level (training data)
+      # Coding at document level
 
       .pull-left[
 
-      Human coding of training sample (10% = 5,996 sentences)
-
-      - Topic(s)
-        - Following Jobin et al.
-        - Transparency, Justice & Fairness, Responsibility, ...
-      - Tone
-        - Still unsure.
-        - Sentiment (negative, neutral, positive
-        - Opportunity, warning, ...
-      - Purpose:
-        - Still unsure.
-        - Explanation, commitment, recommendation, ...
+      - **Metadata**: date, region, ...
+      - **Type of actor**: public, private, civil society
+      - **Target audience**: developers/expert community, policymakers, general public (add "self"?)
+      - **Scope**: broad vs narrow
 
       ]
+
+      --
+
+      .pull-right[
+
+      ![](img/table1.png)
+
+      ]
+
+      ---
+
+      # Labeling at sentence level (training data)
+
+      .pull-left.small[
+
+      Manual labeling of training sample .tiny[(10% = 5,996* sentences)]
+
+      - **Topic(s)**, following Jobin et al.:
+        - Transparency, justice/fairness, responsibility, ...
+      - **Purpose**:
+        - Explanation, commitment, recommendation, ...
+      - **Tone** (still unsure):
+        - Sentiment (negative, neutral, positive)
+        - Opportunity, warning, ...
+
+      ]
+
+      --
 
       .pull-right[
 
       ![](img/table2.png)
+
+      .img-tiny[![](img/table3.png)]
 
       ]
 
@@ -134,25 +149,56 @@
 
       # Neural net classifiers
 
-      .left-column[
+      .left-column.small[
 
-      ![](img/BCNWGG%20-%20Sticky%20institutions%20-%20AI.png)
-
+      - **Assignment of labels as binary classification tasks**
+      - Class balance
+      - Standard text preprocessing using the off-the-shelf *tf.keras.layers.TextVectorization* layer
+      - Word embeddings with 64 dimensions (pretrained BERT as next step)
+      - Depth: 50 epochs
 
       ]
 
       --
 
+      .right-column.center[
+
+      ![](img/table4.png)
+
+      ]
+
+      ---
+
+      # Downstream analysis (projected)
+
+      .left-column[
+
+      - **Aggregation**: Compute document-level shares of labels
+      - **Descriptive statistics**
+
+      ]
+
       .right-column[
 
-      .huge[Case study shows]
-      .tiny[Test for small font]
-      
-      - **Informal IOs** (G7 and G20) = decorative second-movers
-      - **Like-minded formal IOs** (OECD and EU) = decisive first-movers
-      - **Diverse formal IOs** (UNESCO and CoE) = decisive second-movers
+      ![](img/purpose_actor.png)
 
-      Ergo: Formal IOs decisive, like-minded IOs faster.
+      ]
+
+      ---
+
+      # Discussion
+
+      .left-column[
+
+      - **Engagement with previous literature**: consensus topics, omitted topics, sectorial/regional differences
+      - **Trends**: include temporal dimension
+      - **Limitations**: Document selection, conceptual ambiguity, realiability and validation of ML predictions
+
+      ]
+
+      .right-column.img-tiny.center[
+
+      ![](img/machine_learning.png)
 
       ]
 
@@ -161,6 +207,24 @@
       class: center, middle, inverse
 
       #Thank you!
+
+      ---
+
+      # More tables
+
+      .pull-left[
+
+      ![](img/table5.png)
+
+      ]
+
+      .pull-right[
+
+      ![](img/table6.png)
+
+      ![](img/table7.png)
+
+      ]
 
     </textarea>
     <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
